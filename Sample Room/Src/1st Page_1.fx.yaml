@@ -1,0 +1,65 @@
+"'1st Page_1' As screen":
+
+    Label1_4 As label:
+        Fill: =RGBA(209, 232, 178, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =1029
+        Size: =21
+        Text: =""
+        Width: =640
+        Y: =107
+        ZIndex: =1
+
+    Label1_3 As label:
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(56, 96, 178, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =21
+        Text: ="Sample Room"
+        Width: =640
+        Y: =20
+        ZIndex: =3
+
+    Image1_6 As image:
+        Height: =39
+        Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+        Width: =161
+        X: =5
+        Y: =32
+        ZIndex: =6
+
+    Label2_18 As label:
+        Align: =Align.Right
+        Color: =RGBA(179, 179, 179, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =26
+        Size: =15
+        Text: ="ACTIVE LINEA INTIMO - IE"
+        Width: =275
+        X: =150
+        Y: =47
+        ZIndex: =7
+
+    Label2_22 As label:
+        Align: =Align.Right
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Text: ="IE DIGITALIZATION"
+        Width: =180
+        X: =449
+        Y: =1099
+        ZIndex: =8
+
+    Label2_19 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        Size: =12
+        Text: ="Designed by "
+        X: =482
+        Y: =1073
+        ZIndex: =9
+

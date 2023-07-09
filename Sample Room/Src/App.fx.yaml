@@ -1,0 +1,53 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =//Create collection for hours
+        
+        ForAll(
+            Sequence(
+                25,
+                0,
+                1
+            ),
+            Collect(
+                ColHours,
+                {
+                    HourText: If(
+                        ThisRecord.Value < 10,
+                        "0" & ThisRecord.Value,
+                        ThisRecord.Value
+                    ),
+                    HourValue: ThisRecord.Value
+                }
+            )
+        );
+        //Create collection for minutes
+        ForAll(
+            Sequence(
+                60,
+                0,
+                1
+            ),
+            Collect(
+                ColMinutes,
+                {
+                    MinuteText: If(
+                        ThisRecord.Value < 10,
+                        "0" & ThisRecord.Value,
+                        ThisRecord.Value
+                    ),
+                    MinuteValue: ThisRecord.Value
+                }
+            )
+        );
+        
+        ResetForm(Form_SampleRoom) And NewForm(Form_SampleRoom);
+    StartScreen: ='1st Page'
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
